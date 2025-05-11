@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #4F46E5; /* indigo-600 */
+    --color-primary-hover: #4338CA; /* indigo-700 */
+    --color-primary-light: #E0E7FF; /* indigo-100 */
+    
+    /* Neutral Colors */
+    --color-background: #FFFFFF; /* white */
+    --color-surface: #F9FAFB; /* gray-50 */
+    --color-border: #E5E7EB; /* gray-200 */
+    --color-text-primary: #111827; /* gray-900 */
+    --color-text-secondary: #4B5563; /* gray-600 */
+    --color-text-tertiary: #9CA3AF; /* gray-400 */
+    
+    /* Semantic Colors */
+    --color-success: #059669; /* emerald-600 */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-error: #E11D48; /* rose-600 */
+    --color-info: #0EA5E9; /* sky-500 */
+    
+    /* Extended Primary Colors */
+    --color-primary-100: #E0E7FF; /* indigo-100 */
+    --color-primary-200: #C7D2FE; /* indigo-200 */
+    --color-primary-300: #A5B4FC; /* indigo-300 */
+    --color-primary-400: #818CF8; /* indigo-400 */
+    --color-primary-500: #6366F1; /* indigo-500 */
+    --color-primary-600: #4F46E5; /* indigo-600 */
+    --color-primary-700: #4338CA; /* indigo-700 */
+    --color-primary-800: #3730A3; /* indigo-800 */
+    --color-primary-900: #312E81; /* indigo-900 */
+  }
+}
+
+@layer components {
+  /* Typography Classes */
+  .display {
+    @apply text-5xl font-bold tracking-tight;
+  }
+  
+  .heading-1 {
+    @apply text-4xl font-bold tracking-tight;
+  }
+  
+  .heading-2 {
+    @apply text-3xl font-semibold;
+  }
+  
+  .heading-3 {
+    @apply text-2xl font-semibold;
+  }
+  
+  .heading-4 {
+    @apply text-xl font-semibold;
+  }
+  
+  .body-large {
+    @apply text-lg;
+  }
+  
+  .body {
+    @apply text-base;
+  }
+  
+  .body-small {
+    @apply text-sm;
+  }
+  
+  .caption {
+    @apply text-xs;
+  }
+  
+  .code {
+    @apply font-mono text-sm;
+  }
+  
+  /* Button Variants */
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-hover focus:ring-primary;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-400;
+  }
+  
+  .btn-outline {
+    @apply btn bg-transparent border border-primary text-primary hover:bg-primary-light focus:ring-primary;
+  }
+  
+  .btn-ghost {
+    @apply btn bg-transparent text-primary hover:bg-primary-light focus:ring-primary;
+  }
+}
