@@ -98,7 +98,7 @@ Build the application for production:
 npm run build
 ```
 
-## 🙏 Acknowledgments
+## ![alt text](image.png) Acknowledgments
 
 - Built with [Rocket.new](https://rocket.new)
 - Powered by React and Vite
