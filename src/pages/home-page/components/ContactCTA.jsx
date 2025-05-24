@@ -30,17 +30,17 @@ const ContactCTA = () => {
               Get in Touch
             </Link>
             <a
-              href="#download-resume"
+              href="https://drive.google.com/file/d/1jMOxpJcxM25J56hzoRkpTPHeI_ZfHx_F/view?usp=sharing"
               className="btn-outline inline-flex items-center gap-2"
-              id="download-resume"
-              onClick={(e) => {
-                e.preventDefault();
-                // Mock download functionality
-                alert("Resume download started!");
-              }}
+              id="download-resume" target="_blank"
+              // onClick={(e) => {
+              //   e.preventDefault();
+              //   // Mock download functionality
+              //   // alert("Resume download started!");
+              // }}
             >
               <Icon name="Download" size={18} />
-              Download Resume
+              Resume
             </a>
           </div>
         </motion.div>

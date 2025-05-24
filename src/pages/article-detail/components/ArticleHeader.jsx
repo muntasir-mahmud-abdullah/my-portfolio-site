@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Icon from "../../../components/AppIcon";
 import Image from "../../../components/AppImage";
@@ -9,12 +8,13 @@ const ArticleHeader = () => {
     publishDate: "May 15, 2023",
     readTime: "8 min read",
     author: {
-      name: "Alex Johnson",
+      name: "Muntasir Mahmud",
       avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-      role: "Frontend Developer"
+      role: "Frontend Developer",
     },
     categories: ["React", "JavaScript", "Web Development"],
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    image:
+      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   };
 
   return (
@@ -49,7 +49,9 @@ const ArticleHeader = () => {
           <p className="font-medium text-text-primary">
             {articleData.author.name}
           </p>
-          <p className="text-sm text-text-tertiary">{articleData.author.role}</p>
+          <p className="text-sm text-text-tertiary">
+            {articleData.author.role}
+          </p>
         </div>
         <div className="ml-auto flex items-center text-text-tertiary">
           <Icon name="Calendar" size={16} className="mr-2" />

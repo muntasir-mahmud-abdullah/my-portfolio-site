@@ -13,9 +13,10 @@ When I'm not coding, you can find me exploring hiking trails, experimenting with
     phone: "+880 1577065084",
     availability: "Available for freelance projects",
     languages: [
-      "English (Native)",
-      "Spanish (Conversational)",
-      "French (Basic)",
+      "Bangla (Native)",
+      "English (Basic)",
+      "Urdu (Conversational)",
+      "Hindi (Conversational)",
     ],
   };
 

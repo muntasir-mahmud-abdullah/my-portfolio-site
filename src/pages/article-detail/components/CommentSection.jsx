@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import Icon from "../../../components/AppIcon";
 import Image from "../../../components/AppImage";
 
@@ -10,36 +10,39 @@ const CommentSection = () => {
       id: 1,
       author: {
         name: "Sarah Chen",
-        avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+        avatar: "https://randomuser.me/api/portraits/women/44.jpg",
       },
-      content: "This article was incredibly helpful! I\'ve been struggling with optimizing my React components and the section on memoization really cleared things up for me. Looking forward to implementing these patterns in my next project.",
+      content:
+        "This article was incredibly helpful! I've been struggling with optimizing my React components and the section on memoization really cleared things up for me. Looking forward to implementing these patterns in my next project.",
       date: "2 days ago",
       likes: 12,
       replies: [
         {
           id: 101,
           author: {
-            name: "Alex Johnson",
+            name: "Muntasir Mahmud",
             avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-            isAuthor: true
+            isAuthor: true,
           },
-          content: "Thanks Sarah! I\'m glad you found it helpful. Let me know if you have any questions when implementing these patterns.",
+          content:
+            "Thanks Sarah! I'm glad you found it helpful. Let me know if you have any questions when implementing these patterns.",
           date: "1 day ago",
-          likes: 3
-        }
-      ]
+          likes: 3,
+        },
+      ],
     },
     {
       id: 2,
       author: {
         name: "Michael Rodriguez",
-        avatar: "https://randomuser.me/api/portraits/men/67.jpg"
+        avatar: "https://randomuser.me/api/portraits/men/67.jpg",
       },
-      content: "Great overview of modern React patterns! I especially liked the comparison of different state management solutions. One question though - in your opinion, when would you recommend using Zustand over Redux Toolkit?",
+      content:
+        "Great overview of modern React patterns! I especially liked the comparison of different state management solutions. One question though - in your opinion, when would you recommend using Zustand over Redux Toolkit?",
       date: "3 days ago",
       likes: 8,
-      replies: []
-    }
+      replies: [],
+    },
   ]);
 
   const handleSubmitComment = (e) => {
@@ -49,12 +52,12 @@ const CommentSection = () => {
         id: comments.length + 1,
         author: {
           name: "You",
-          avatar: "https://randomuser.me/api/portraits/lego/1.jpg"
+          avatar: "https://randomuser.me/api/portraits/lego/1.jpg",
         },
         content: comment,
         date: "Just now",
         likes: 0,
-        replies: []
+        replies: [],
       };
       setComments([newComment, ...comments]);
       setComment("");

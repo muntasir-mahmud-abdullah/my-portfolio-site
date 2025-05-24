@@ -62,7 +62,7 @@ const Navbar = () => {
             ))}
             <a
               href="https://drive.google.com/file/d/1jMOxpJcxM25J56hzoRkpTPHeI_ZfHx_F/view?usp=sharing"
-              className="btn-primary flex items-center space-x-2"
+              className="btn-primary flex items-center space-x-2" target="_blank"
             >
               <Icon name="Download" size={16} />
               <span>Resume</span>

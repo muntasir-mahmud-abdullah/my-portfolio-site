@@ -1,5 +1,5 @@
-import React, { useState, useContext, useMemo, useCallback } from 'react';
 import { motion } from "framer-motion";
+import { useState } from "react";
 import Icon from "../../../components/AppIcon";
 import Image from "../../../components/AppImage";
 
@@ -9,13 +9,13 @@ const ArticleContent = () => {
   const toggleSection = (id) => {
     setExpandedSections((prev) => ({
       ...prev,
-      [id]: !prev[id]
+      [id]: !prev[id],
     }));
   };
 
   const articleContent = {
     introduction: `React has evolved significantly since its inception, and with each passing year, new patterns and best practices emerge. In 2023, several modern React patterns have gained popularity for their ability to improve code organization, performance, and developer experience. This article explores these patterns and provides practical examples of how to implement them in your projects.`,
-    
+
     sections: [
       {
         id: "hooks-patterns",
@@ -82,7 +82,7 @@ function SignupForm() {
       <button type="submit">Sign Up</button>
     </form>
   );
-}`
+}`,
       },
       {
         id: "component-composition",
@@ -148,7 +148,7 @@ function App() {
       </TabPanels>
     </Tabs>
   );
-}`
+}`,
       },
       {
         id: "state-management",
@@ -198,7 +198,7 @@ function Counter() {
       <button onClick={decrement}>Decrement</button>
     </div>
   );
-}`
+}`,
       },
       {
         id: "performance-optimization",
@@ -258,7 +258,7 @@ function MyComponent() {
       </Suspense>
     </div>
   );
-}`
+}`,
       },
       {
         id: "testing-strategies",
@@ -305,15 +305,15 @@ test('loads and displays user data', async () => {
   
   // Clean up
   global.fetch.mockRestore();
-});`
-      }
+});`,
+      },
     ],
-    
+
     conclusion: `As React continues to evolve, staying up-to-date with modern patterns and best practices is essential for building high-quality applications. The patterns discussed in this article—advanced hooks, component composition, modern state management, performance optimization, and testing strategies—provide a solid foundation for React development in 2023.
 
 By adopting these patterns, you can write more maintainable, performant, and robust React applications. Remember that patterns are tools, not rules—always consider your specific use case and choose the approach that best fits your needs.
 
-What modern React patterns have you found most useful in your projects? Share your experiences in the comments below!`
+What modern React patterns have you found most useful in your projects? Share your experiences in the comments below!`,
   };
 
   return (
@@ -336,7 +336,9 @@ What modern React patterns have you found most useful in your projects? Share yo
 
           <div className="bg-surface rounded-lg p-4 mb-6 border border-border">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-medium text-text-primary">Code Example</span>
+              <span className="text-sm font-medium text-text-primary">
+                Code Example
+              </span>
               <button
                 className="text-text-tertiary hover:text-primary transition-colors duration-300"
                 onClick={() => {
@@ -349,18 +351,28 @@ What modern React patterns have you found most useful in your projects? Share yo
               </button>
             </div>
             <pre className="bg-background p-4 rounded overflow-x-auto">
-              <code className="code text-text-primary">{section.codeExample}</code>
+              <code className="code text-text-primary">
+                {section.codeExample}
+              </code>
             </pre>
           </div>
 
           {section.id === "component-composition" && (
             <div className="bg-surface rounded-lg p-6 mb-6 border border-border">
-              <h3 className="heading-4 text-text-primary mb-4">Interactive Example</h3>
+              <h3 className="heading-4 text-text-primary mb-4">
+                Interactive Example
+              </h3>
               <div className="bg-background rounded-lg p-4">
                 <div className="flex border-b border-border">
-                  <button className="px-4 py-2 border-b-2 border-primary text-primary font-medium">Tab 1</button>
-                  <button className="px-4 py-2 text-text-secondary">Tab 2</button>
-                  <button className="px-4 py-2 text-text-secondary">Tab 3</button>
+                  <button className="px-4 py-2 border-b-2 border-primary text-primary font-medium">
+                    Tab 1
+                  </button>
+                  <button className="px-4 py-2 text-text-secondary">
+                    Tab 2
+                  </button>
+                  <button className="px-4 py-2 text-text-secondary">
+                    Tab 3
+                  </button>
                 </div>
                 <div className="p-4">
                   <p className="text-text-secondary">Content for Tab 1</p>
@@ -378,7 +390,18 @@ What modern React patterns have you found most useful in your projects? Share yo
                 <div>
                   <h3 className="heading-4 text-text-primary mb-2">Pro Tip</h3>
                   <p className="text-text-secondary">
-                    When using <code className="bg-primary bg-opacity-10 px-1 rounded">useMemo</code> and <code className="bg-primary bg-opacity-10 px-1 rounded">useCallback</code>, always ensure your dependency arrays are correctly specified. Missing dependencies can lead to stale closures, while unnecessary dependencies can negate the performance benefits.
+                    When using{" "}
+                    <code className="bg-primary bg-opacity-10 px-1 rounded">
+                      useMemo
+                    </code>{" "}
+                    and{" "}
+                    <code className="bg-primary bg-opacity-10 px-1 rounded">
+                      useCallback
+                    </code>
+                    , always ensure your dependency arrays are correctly
+                    specified. Missing dependencies can lead to stale closures,
+                    while unnecessary dependencies can negate the performance
+                    benefits.
                   </p>
                 </div>
               </div>
@@ -391,9 +414,15 @@ What modern React patterns have you found most useful in your projects? Share yo
                 onClick={() => toggleSection("state-comparison")}
                 className="flex items-center justify-between w-full bg-surface p-4 rounded-lg border border-border text-left"
               >
-                <span className="font-medium text-text-primary">Comparing State Management Solutions</span>
+                <span className="font-medium text-text-primary">
+                  Comparing State Management Solutions
+                </span>
                 <Icon
-                  name={expandedSections["state-comparison"] ? "ChevronUp" : "ChevronDown"}
+                  name={
+                    expandedSections["state-comparison"]
+                      ? "ChevronUp"
+                      : "ChevronDown"
+                  }
                   size={20}
                   className="text-text-tertiary"
                 />
@@ -404,42 +433,90 @@ What modern React patterns have you found most useful in your projects? Share yo
                     <table className="min-w-full divide-y divide-border">
                       <thead>
                         <tr>
-                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">Solution</th>
-                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">Best For</th>
-                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">Learning Curve</th>
-                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">Bundle Size</th>
+                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">
+                            Solution
+                          </th>
+                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">
+                            Best For
+                          </th>
+                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">
+                            Learning Curve
+                          </th>
+                          <th className="px-4 py-3 text-left text-sm font-medium text-text-primary bg-background">
+                            Bundle Size
+                          </th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-border">
                         <tr>
-                          <td className="px-4 py-3 text-sm text-text-primary">useState/useReducer</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Local component state</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Low</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">None (built-in)</td>
+                          <td className="px-4 py-3 text-sm text-text-primary">
+                            useState/useReducer
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Local component state
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Low
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            None (built-in)
+                          </td>
                         </tr>
                         <tr>
-                          <td className="px-4 py-3 text-sm text-text-primary">Context API</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Sharing state between components</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Medium</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">None (built-in)</td>
+                          <td className="px-4 py-3 text-sm text-text-primary">
+                            Context API
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Sharing state between components
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Medium
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            None (built-in)
+                          </td>
                         </tr>
                         <tr>
-                          <td className="px-4 py-3 text-sm text-text-primary">Redux Toolkit</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Complex global state with middleware</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">High</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">~15KB (minified)</td>
+                          <td className="px-4 py-3 text-sm text-text-primary">
+                            Redux Toolkit
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Complex global state with middleware
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            High
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            ~15KB (minified)
+                          </td>
                         </tr>
                         <tr>
-                          <td className="px-4 py-3 text-sm text-text-primary">Zustand</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Simple global state</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Low</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">~3KB (minified)</td>
+                          <td className="px-4 py-3 text-sm text-text-primary">
+                            Zustand
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Simple global state
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Low
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            ~3KB (minified)
+                          </td>
                         </tr>
                         <tr>
-                          <td className="px-4 py-3 text-sm text-text-primary">Jotai</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Atomic state management</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">Medium</td>
-                          <td className="px-4 py-3 text-sm text-text-secondary">~4KB (minified)</td>
+                          <td className="px-4 py-3 text-sm text-text-primary">
+                            Jotai
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Atomic state management
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            Medium
+                          </td>
+                          <td className="px-4 py-3 text-sm text-text-secondary">
+                            ~4KB (minified)
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -461,12 +538,14 @@ What modern React patterns have you found most useful in your projects? Share yo
           <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
             <Image
               src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Alex Johnson"
+              alt="Muntasir"
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h3 className="heading-4 text-text-primary mb-1">Written by Alex Johnson</h3>
+            <h3 className="heading-4 text-text-primary mb-1">
+              Written by Muntasir Mahmud
+            </h3>
             <p className="text-text-secondary mb-2">Frontend Developer</p>
             <div className="flex space-x-3">
               <a

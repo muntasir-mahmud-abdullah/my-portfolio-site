@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Icon from "../../../components/AppIcon";
 
@@ -7,19 +6,19 @@ const ContactInfo = () => {
     {
       icon: "Mail",
       title: "Email",
-      value: "alex.johnson@example.com",
-      link: "mailto:alex.johnson@example.com",
+      value: "muntasirm525@gmail.com",
+      link: "mailto:muntasirm525@gmail.com",
     },
     {
       icon: "Phone",
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+880 1577065084",
       link: "tel:+15551234567",
     },
     {
       icon: "MapPin",
       title: "Location",
-      value: "San Francisco, CA, USA",
+      value: "Chattogram, Bangladesh",
       link: null,
     },
   ];
@@ -28,21 +27,21 @@ const ContactInfo = () => {
     {
       icon: "Github",
       name: "GitHub",
-      username: "@alexjohnson",
-      link: "https://github.com",
+      username: "@muntasir-mahmud-abdullah",
+      link: "https://github.com/muntasir-mahmud-abdullah",
     },
     {
       icon: "Linkedin",
       name: "LinkedIn",
-      username: "Alex Johnson",
-      link: "https://linkedin.com",
+      username: "muntasir-mahmud-abdullah47",
+      link: "https://www.linkedin.com/in/muntasir-mahmud-abdullah47",
     },
-    {
-      icon: "Twitter",
-      name: "Twitter",
-      username: "@alexjohnsondev",
-      link: "https://twitter.com",
-    },
+    // {
+    //   icon: "Twitter",
+    //   name: "Twitter",
+    //   username: "@alexjohnsondev",
+    //   link: "https://twitter.com",
+    // },
   ];
 
   return (
@@ -52,7 +51,9 @@ const ContactInfo = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className="bg-background rounded-lg shadow-sm border border-border p-6 md:p-8 mb-8">
-        <h2 className="heading-3 text-text-primary mb-6">Contact Information</h2>
+        <h2 className="heading-3 text-text-primary mb-6">
+          Contact Information
+        </h2>
 
         <div className="space-y-6">
           {contactDetails.map((item) => (
@@ -111,8 +112,8 @@ const ContactInfo = () => {
           <h3 className="font-medium text-text-primary">Response Time</h3>
         </div>
         <p className="text-text-secondary">
-          I typically respond to all inquiries within 24-48 hours during business
-          days. For urgent matters, please indicate in your message.
+          I typically respond to all inquiries within 24-48 hours during
+          business days. For urgent matters, please indicate in your message.
         </p>
       </div>
     </motion.div>

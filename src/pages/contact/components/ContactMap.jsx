@@ -15,7 +15,7 @@ const ContactMap = () => {
           <h2 className="heading-2 text-text-primary mb-6">My Location</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
           <p className="body-large text-text-secondary">
-            Based in San Francisco, but working with clients worldwide. Feel free
+            Based in Chattogram, Bangladesh, but working with clients worldwide. Feel free
             to reach out regardless of your location.
           </p>
         </motion.div>
@@ -31,9 +31,9 @@ const ContactMap = () => {
             width="100%"
             height="100%"
             loading="lazy"
-            title="San Francisco"
+            title="Chattogram"
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=37.7749,-122.4194&z=14&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.355909917355!2d91.75894711009465!3d22.377936379545883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd984b74bb78b%3A0x68349a3d1a88250a!2sLatifpur%20School%20Rd%2C%20Salimpur%204317!5e0!3m2!1sen!2sbd!4v1748100284856!5m2!1sen!2sbd"
           ></iframe>
         </motion.div>
       </div>

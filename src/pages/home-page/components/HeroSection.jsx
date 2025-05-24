@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Icon from "../../../components/AppIcon";
 import Image from "../../../components/AppImage";
 
@@ -44,7 +43,7 @@ const HeroSection = () => {
               <p className="body-small text-text-tertiary mb-4">Find me on</p>
               <div className="flex space-x-5">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/muntasir-mahmud-abdullah"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-secondary hover:text-primary transition-colors duration-300"
@@ -53,7 +52,7 @@ const HeroSection = () => {
                   <Icon name="Github" size={22} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/muntasir-mahmud-abdullah47"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-secondary hover:text-primary transition-colors duration-300"
@@ -61,7 +60,7 @@ const HeroSection = () => {
                 >
                   <Icon name="Linkedin" size={22} />
                 </a>
-                <a
+                {/* <a
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -78,7 +77,7 @@ const HeroSection = () => {
                   aria-label="Dribbble Profile"
                 >
                   <Icon name="Dribbble" size={22} />
-                </a>
+                </a> */}
               </div>
             </div>
           </motion.div>
@@ -95,14 +94,16 @@ const HeroSection = () => {
               <div className="relative overflow-hidden rounded-full border-4 border-primary border-opacity-20 shadow-xl">
                 <Image
                   src="https://i.ibb.co.com/tp6M4R3J/Whats-App-Image-2024-02-27-at-15-33-24-09792d8f.jpg"
-                  alt="Alex Johnson - Frontend Developer"
+                  alt="Muntasir Mahmud - Frontend Developer"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-surface p-4 rounded-lg shadow-lg border border-border">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium">Available for work</span>
+                  <span className="text-sm font-medium">
+                    Available for work
+                  </span>
                 </div>
               </div>
             </div>

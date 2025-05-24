@@ -10,7 +10,7 @@ const Testimonials = () => {
       name: "Sarah Johnson",
       role: "Product Manager at TechCorp",
       image: "https://randomuser.me/api/portraits/women/32.jpg",
-      quote: "Alex is an exceptional frontend developer who consistently delivers high-quality work. His attention to detail and ability to translate designs into functional interfaces is impressive. He\'s also great at communicating technical concepts to non-technical team members.",
+      quote: "Muntasir is an exceptional frontend developer who consistently delivers high-quality work. His attention to detail and ability to translate designs into functional interfaces is impressive. He\'s also great at communicating technical concepts to non-technical team members.",
       relationship: "Project Collaboration"
     },
     {
@@ -18,7 +18,7 @@ const Testimonials = () => {
       name: "David Chen",
       role: "UX Designer at DesignHub",
       image: "https://randomuser.me/api/portraits/men/44.jpg",
-      quote: "Working with Alex was a pleasure. He has a keen eye for design and understands the importance of user experience. He took my designs and not only implemented them perfectly but also suggested improvements that enhanced the overall user experience.",
+      quote: "Working with Muntasir was a pleasure. He has a keen eye for design and understands the importance of user experience. He took my designs and not only implemented them perfectly but also suggested improvements that enhanced the overall user experience.",
       relationship: "Design Implementation"
     },
     {
@@ -26,7 +26,7 @@ const Testimonials = () => {
       name: "Emily Rodriguez",
       role: "CTO at StartupX",
       image: "https://randomuser.me/api/portraits/women/68.jpg",
-      quote: "Alex joined our team during a critical phase of our product development, and his impact was immediate. His technical expertise, problem-solving skills, and collaborative approach were exactly what we needed. He\'s not just a developer; he\'s a true problem solver.",
+      quote: "Muntasir joined our team during a critical phase of our product development, and his impact was immediate. His technical expertise, problem-solving skills, and collaborative approach were exactly what we needed. He\'s not just a developer; he\'s a true problem solver.",
       relationship: "Team Leadership"
     }
   ];

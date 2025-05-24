@@ -1,10 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Icon from "../../../components/AppIcon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const navLinks = [
     { name: "Home", path: "/home-page" },
     { name: "Portfolio", path: "/portfolio-gallery" },
@@ -136,7 +135,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border text-center md:flex md:justify-between md:text-left">
           <p className="text-text-secondary text-sm">
-            &copy; {currentYear} Alex Johnson. All rights reserved.
+            &copy; {currentYear} Muntasir Mahmud. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex flex-wrap justify-center md:justify-end space-x-6">
