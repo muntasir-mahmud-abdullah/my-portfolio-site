@@ -17,10 +17,10 @@ const AboutMe = () => {
       <main>
         <AboutHero />
         <Biography />
-        <Timeline />
-        <Education />
-        <PersonalValues />
-        <Testimonials />
+        {/* <Timeline /> */}
+        {/* <Education /> */}
+        {/* <PersonalValues /> */}
+        {/* <Testimonials /> */}
         <ContactCTA />
       </main>
       <Footer />

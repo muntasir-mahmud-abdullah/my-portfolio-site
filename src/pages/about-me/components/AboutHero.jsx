@@ -36,13 +36,13 @@ const AboutHero = () => {
                 <Icon name="Download" size={18} />
                 Resume
               </a>
-              <a
+              {/* <a
                 href="#timeline"
                 className="btn-outline flex items-center gap-2"
               >
                 <Icon name="Clock" size={18} />
                 View My Journey
-              </a>
+              </a> */}
             </div>
           </motion.div>
 

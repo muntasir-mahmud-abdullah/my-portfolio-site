@@ -26,9 +26,9 @@ const HeroSection = () => {
               fast, accessible, and visually appealing.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/portfolio-gallery" className="btn-primary">
+              {/* <Link to="/portfolio-gallery" className="btn-primary">
                 View My Work
-              </Link>
+              </Link> */}
               <Link
                 to="/contact"
                 className="btn-outline flex items-center gap-2"

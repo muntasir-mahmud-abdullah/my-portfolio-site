@@ -229,7 +229,7 @@ const SkillsExpertise = () => {
           </div>
         </section>
 
-        {/* Certifications Section */}
+        {/* Certifications Section
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
@@ -252,9 +252,9 @@ const SkillsExpertise = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Testimonials Section */}
+        {/* Testimonials Section
         <section className="py-16 md:py-24 bg-surface">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
@@ -277,7 +277,7 @@ const SkillsExpertise = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-primary bg-opacity-5">

@@ -6,10 +6,10 @@ import Icon from "../../../components/AppIcon";
 const SkillsPreview = () => {
   const skills = [
     { name: "HTML5", icon: "FileHtml", level: 95 },
-    { name: "CSS3/SASS", icon: "FileCss", level: 90 },
+    { name: "CSS3", icon: "FileCss", level: 90 },
     { name: "JavaScript", icon: "FileJs", level: 92 },
     { name: "React", icon: "FileCode", level: 88 },
-    { name: "TypeScript", icon: "FileType", level: 80 },
+    // { name: "TypeScript", icon: "FileType", level: 80 },
     { name: "Tailwind CSS", icon: "FileText", level: 85 },
   ];
 

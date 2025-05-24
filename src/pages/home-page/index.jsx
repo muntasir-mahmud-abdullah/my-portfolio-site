@@ -46,7 +46,7 @@ const HomePage = () => {
         <AboutSection />
         <SkillsPreview />
         <ProjectsPreview />
-        <BlogPreview />
+        {/* <BlogPreview /> */}
         <ContactCTA />
       </main>
       <Footer />

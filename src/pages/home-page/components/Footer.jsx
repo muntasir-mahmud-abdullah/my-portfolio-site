@@ -6,10 +6,10 @@ const Footer = () => {
 
   const navLinks = [
     { name: "Home", path: "/home-page" },
-    { name: "Portfolio", path: "/portfolio-gallery" },
+    // { name: "Portfolio", path: "/portfolio-gallery" },
     { name: "About", path: "/about-me" },
     { name: "Skills", path: "/skills-expertise" },
-    { name: "Blog", path: "/blog-articles" },
+    // { name: "Blog", path: "/blog-articles" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -38,7 +38,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/muntasir-mahmud-abdullah"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-secondary hover:text-primary transition-colors duration-300"
@@ -47,7 +47,7 @@ const Footer = () => {
                 <Icon name="Github" size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/muntasir-mahmud-abdullah47"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-secondary hover:text-primary transition-colors duration-300"
@@ -55,7 +55,7 @@ const Footer = () => {
               >
                 <Icon name="Linkedin" size={20} />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -63,8 +63,8 @@ const Footer = () => {
                 aria-label="Twitter Profile"
               >
                 <Icon name="Twitter" size={20} />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://dribbble.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const Footer = () => {
                 aria-label="Dribbble Profile"
               >
                 <Icon name="Dribbble" size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 

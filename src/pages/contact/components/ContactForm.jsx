@@ -235,7 +235,7 @@ const ContactForm = () => {
               </select>
             </div>
 
-            {/* Budget field */}
+            {/* Budget field
             <div>
               <label
                 htmlFor="budget"
@@ -259,7 +259,7 @@ const ContactForm = () => {
                   </option>
                 ))}
               </select>
-            </div>
+            </div> */}
           </div>
 
           {/* Message field */}
